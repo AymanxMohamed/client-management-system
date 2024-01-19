@@ -30,20 +30,21 @@ public class ClientRepository : IClientRepository
         return Task.FromResult(client);
     }
 
-    public async Task DeleteClientAsync(Guid? id, CancellationToken cancellationToken)
+    public Task DeleteClientAsync(Guid? id, CancellationToken cancellationToken)
     {
         if (id == null)
         {
             throw new ArgumentNullException(nameof(id), "Client Id cannot be null.");
         }
 
-        var clientToDelete = await _context.Clients
-            .FirstOrDefaultAsync(c => c.Id == id, cancellationToken);
+        var clientToDelete = _context.Clients.FirstOrDefault(c => c.Id == id);
 
         if (clientToDelete != null)
         {
             _context.Clients.Remove(clientToDelete);
         }
+
+        return Task.CompletedTask;
     }
 
     public void UpdateClient(Client client, CancellationToken cancellationToken)
