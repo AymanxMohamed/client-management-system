@@ -1,25 +1,17 @@
 ﻿namespace CMS.Domain.Shared;
 
-public class Result
+public class Result<TValue> : Result
 {
-    protected internal Result(bool isSuccess, Error error)
-    {
-        Error = error;
-        IsSuccess = isSuccess switch
-        {
-            true when error != Error.None => throw new InvalidOperationException(),
-            false when error == Error.None => throw new InvalidOperationException(),
-            _ => isSuccess
-        };
-    }
+    private readonly TValue? _value;
     
-    public bool IsSuccess { get; }
-    public bool IsFailure => !IsSuccess;
-    
-    public Error Error { get; }
+    protected internal Result(TValue? value, bool isSuccess, Error error) : base(isSuccess, error) => _value = value;
 
-    public static Result Success() => new(true, Error.None);
-    public static Result<TValue> Success
+    public TValue Value => IsSuccess
+        ? _value!
+        : throw new InvalidOperationException("The value of a failure result can not be accessed.");
 
+    public static implicit operator Result<TValue>(TValue? value) => Create(value);
+
+    private static Result<TValue> Create(TValue? value) => new(value, true, Error.None);
 }
 

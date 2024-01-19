@@ -1,4 +1,4 @@
-﻿namespace SlaSystem.Domain.Primitives;
+﻿namespace CMS.Domain.Primitives;
 
 /// A value object is a type that is defined only by it's values
 /// If two value objects has the same value they considered equal
