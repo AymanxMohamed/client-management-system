@@ -12,6 +12,10 @@
     <PackageReference Include="System.Data.SQLite" Version="1.0.117" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Persistence\Migrations\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

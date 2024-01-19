@@ -8,5 +8,5 @@ public interface IClientRepository
     Task<List<Client>> GetClientsAsync(CancellationToken cancellationToken);
     Task<Client> GetClientByIdAsync(Guid? id, CancellationToken cancellationToken);
     Task DeleteClientAsync(Guid? id, CancellationToken cancellationToken);
-    Task UpdateClientAsync(Client client, CancellationToken cancellationToken);
+    void UpdateClient(Client client, CancellationToken cancellationToken);
 }

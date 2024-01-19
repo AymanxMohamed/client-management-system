@@ -1,0 +1,142 @@
+﻿[
+  {
+    "Id": "c995ee7b-8b58-4b73-aeb2-7d66f331a0a1",
+    "Name": "John Doe",
+    "EmailAddress": "john.doe@email.com",
+    "PhoneNumber": "+1234567890",
+    "HomeAddress": "123 Main St, Cityville"
+  },
+  {
+    "Id": "a2f4c1d8-6a93-4f7c-bf79-91e09fe3d4a2",
+    "Name": "Alice Johnson",
+    "EmailAddress": "alice.johnson@email.com",
+    "PhoneNumber": "+1987654321",
+    "HomeAddress": "456 Elm St, Townsville"
+  },
+  {
+    "Id": "f8e3b1bc-710c-4d4c-ba15-29159368cfea",
+    "Name": "Bob Smith",
+    "EmailAddress": "bob.smith@email.com",
+    "PhoneNumber": "+1357924680",
+    "HomeAddress": "789 Oak St, Villagetown"
+  },
+  {
+    "Id": "68b8eeaf-2f15-499f-98bb-82c41e7d0b65",
+    "Name": "Eva Davis",
+    "EmailAddress": "eva.davis@email.com",
+    "PhoneNumber": "+1122334455",
+    "HomeAddress": "101 Pine St, Hamletville"
+  },
+  {
+    "Id": "392b159a-4d9d-4cc7-9a2b-18a4565d7bf7",
+    "Name": "Charlie Brown",
+    "EmailAddress": "charlie.brown@email.com",
+    "PhoneNumber": "+1555666777",
+    "HomeAddress": "202 Cedar St, Suburbia"
+  },
+  {
+    "Id": "d8ec2efb-7d44-40db-8dfe-53cf12a80e98",
+    "Name": "Grace Miller",
+    "EmailAddress": "grace.miller@email.com",
+    "PhoneNumber": "+1777888999",
+    "HomeAddress": "303 Maple St, Countryside"
+  },
+  {
+    "Id": "42a1aaf8-0b6d-4d1c-b032-8e0c27d8e1ea",
+    "Name": "Frank Wilson",
+    "EmailAddress": "frank.wilson@email.com",
+    "PhoneNumber": "+1444333222",
+    "HomeAddress": "404 Birch St, Outskirts"
+  },
+  {
+    "Id": "7d73b2cd-b824-4cf3-9a6e-93de72390e13",
+    "Name": "Helen Martinez",
+    "EmailAddress": "helen.martinez@email.com",
+    "PhoneNumber": "+1666777888",
+    "HomeAddress": "505 Redwood St, Farmland"
+  },
+  {
+    "Id": "9f47a372-327b-4f2a-bce4-c2c0022c64c7",
+    "Name": "Samuel White",
+    "EmailAddress": "samuel.white@email.com",
+    "PhoneNumber": "+1999888777",
+    "HomeAddress": "606 Walnut St, Riverside"
+  },
+  {
+    "Id": "e7d49a6f-954d-4e1a-a5b1-65e9073400c5",
+    "Name": "Linda Robinson",
+    "EmailAddress": "linda.robinson@email.com",
+    "PhoneNumber": "+1888777666",
+    "HomeAddress": "707 Mahogany St, Lakeside"
+  },
+  {
+    "Id": "c71d70db-ff22-4ad7-af44-593d91452a39",
+    "Name": "Daniel Thompson",
+    "EmailAddress": "daniel.thompson@email.com",
+    "PhoneNumber": "+1777666555",
+    "HomeAddress": "808 Chestnut St, Mountainside"
+  },
+  {
+    "Id": "88122933-6b94-4e41-bc47-d0ee7bf2d757",
+    "Name": "Olivia Garcia",
+    "EmailAddress": "olivia.garcia@email.com",
+    "PhoneNumber": "+1666555444",
+    "HomeAddress": "909 Poplar St, Plateau"
+  },
+  {
+    "Id": "c6f76320-6282-4fb8-98e7-735ae9de5ad8",
+    "Name": "William Lee",
+    "EmailAddress": "william.lee@email.com",
+    "PhoneNumber": "+1555444333",
+    "HomeAddress": "1001 Fir St, Valley"
+  },
+  {
+    "Id": "d05f0c58-8e02-44d3-a3a3-20794a993b5b",
+    "Name": "Sophia Hall",
+    "EmailAddress": "sophia.hall@email.com",
+    "PhoneNumber": "+1444333222",
+    "HomeAddress": "1112 Spruce St, Highlands"
+  },
+  {
+    "Id": "35ec481e-4e58-47e5-8d68-0d5e5ef99f6a",
+    "Name": "Christopher Turner",
+    "EmailAddress": "christopher.turner@email.com",
+    "PhoneNumber": "+1333222111",
+    "HomeAddress": "1223 Pine St, Mesa"
+  },
+  {
+    "Id": "a5b9f9b5-3e4e-4e64-8a9c-285c437eef64",
+    "Name": "Emma Scott",
+    "EmailAddress": "emma.scott@email.com",
+    "PhoneNumber": "+1222111000",
+    "HomeAddress": "1334 Oak St, Plateau"
+  },
+  {
+    "Id": "61816022-d78d-4f42-8377-e27b7a8db161",
+    "Name": "Ryan Harris",
+    "EmailAddress": "ryan.harris@email.com",
+    "PhoneNumber": "+1111000111",
+    "HomeAddress": "1445 Cedar St, Ridge"
+  },
+  {
+    "Id": "c498c19a-0a97-4e68-82db-eec6415813f3",
+    "Name": "Ava Turner",
+    "EmailAddress": "ava.turner@email.com",
+    "PhoneNumber": "+1000111222",
+    "HomeAddress": "1556 Elm St, Summit"
+  },
+  {
+    "Id": "3c09a98b-8b17-4a5d-89c8-906bb9cf6e29",
+    "Name": "Michael Allen",
+    "EmailAddress": "michael.allen@email.com",
+    "PhoneNumber": "+1888777666",
+    "HomeAddress": "1667 Birch St, Crest"
+  },
+  {
+    "Id": "43b7e8a9-ff44-4d4a-8353-11557e9ef1d0",
+    "Name": "Mia Perez",
+    "EmailAddress": "mia.perez@email.com",
+    "PhoneNumber": "+1777666555",
+    "HomeAddress": "1778 Pine St, Slope"
+  }
+]
