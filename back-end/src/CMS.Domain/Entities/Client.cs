@@ -1,6 +1,4 @@
-﻿using CMS.Domain.Primitives;
-
-namespace CMS.Domain.Entities;
+﻿namespace CMS.Domain.Entities;
 
 public class Client : Entity
 {
