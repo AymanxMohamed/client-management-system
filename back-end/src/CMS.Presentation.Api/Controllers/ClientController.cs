@@ -1,5 +1,6 @@
-﻿using CMS.Application.Clients.Commands;
+﻿using System.Net;
 using CMS.Application.Clients.Dtos;
+using CMS.Domain.Entities;
 using CMS.Domain.Shared;
 using CMS.Presentation.Api.Abstraction;
 using MediatR;
@@ -16,6 +17,9 @@ public class ClientController : ApiController
         _logger = logger;
     }
 
+    [HttpPost(nameof(CreateClient), Name = nameof(CreateClient))]
+    [ProducesResponseType(typeof(Result<ClientDto>), (int)HttpStatusCode.Created)]
+    [ProducesResponseType((int)HttpStatusCode.BadRequest)]
     public async Task<ActionResult<Result<ClientDto>>> CreateClient(CreateClientRequest createClientRequest, 
         CancellationToken cancellationToken)
     {
@@ -26,6 +30,14 @@ public class ClientController : ApiController
         if (result.IsFailure)
             return BadRequest(result.Error);
 
-        return Created("", Result.Success(result.Value.ToString()));
+        return CreatedAtRoute(nameof(GetClientById), new { clientId = result.Value.Id },
+            Result.Success(result.Value));
+    }
+
+    [HttpGet("GetClientById/{clientId:guid}", Name = nameof(GetClientById))]
+    [ProducesResponseType(typeof(Result<ClientDto>), (int)HttpStatusCode.OK)]
+    public async Task<ActionResult<Result<ClientDto>>> GetClientById(Guid? clientId, CancellationToken cancellationToken)
+    {
+        return Result.Failure<ClientDto>(Error.None);
     }
 }

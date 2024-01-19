@@ -11,8 +11,8 @@ public static class ApplicationServicesExtensions
 
         services
             .AddPresentation()
-            .AddApplication()
             .AddInfrastructure(configuration)
+            .AddApplication()
             .AddCors(opt =>
             {
                 opt.AddPolicy("CorsPolicy", policy =>

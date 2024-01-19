@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PvuzllZsiUH1tCOXKlzmBlFpH90ruBApzjIl8KMpLIkVgLxTE2xYvNmGErfuxJVHUYo+itcT+Yk2yCgqA3W1ow==",
+  "dgSpecHash": "KA2ZTNICnczi9nJgylmxoyWzMNHgV6CELEnqTq/3GNIxoqbbP9hRZOTYhHejd9feHWFccTUqK2w3sDBkrx8pdw==",
   "success": true,
   "projectFilePath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Presentation.Api\\CMS.Presentation.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ayman\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
@@ -13,6 +14,7 @@
     "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.16\\microsoft.entityframeworkcore.6.0.16.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.16\\microsoft.entityframeworkcore.abstractions.6.0.16.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.16\\microsoft.entityframeworkcore.analyzers.6.0.16.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.0\\microsoft.entityframeworkcore.design.6.0.0.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.16\\microsoft.entityframeworkcore.relational.6.0.16.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.16\\microsoft.entityframeworkcore.sqlite.6.0.16.nupkg.sha512",
     "C:\\Users\\ayman\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.16\\microsoft.entityframeworkcore.sqlite.core.6.0.16.nupkg.sha512",
