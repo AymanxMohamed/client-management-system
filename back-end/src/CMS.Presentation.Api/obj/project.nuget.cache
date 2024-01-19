@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "MuSeKGD9w0TLm+DILM/bg7H2BAs6kxfuNRvbAn6EXqKbg8hQqYQypabRkdwOr+QltlmDraKSyP9QSesENO462w==",
+  "success": true,
+  "projectFilePath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Presentation.Api\\CMS.Presentation.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ayman\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
