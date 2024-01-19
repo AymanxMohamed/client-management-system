@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "MCiOjCa8wJkG/oIzpyOZDVuIpzQdfvrjK4xdu2jgrPHcIkRRWK4BU8bCb6COAFCo6Cu5NM+ia2uSmvmckUrzCg==",
+  "dgSpecHash": "n7HPa7D0UNOF2SesYtZEeh/Z8Z4BeqgPPvZh3+W6CocJaKr63Q27javQKxqOIf+RUT/TxRy548MvbzF/BD5T4Q==",
   "success": true,
   "projectFilePath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ayman\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\ayman\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

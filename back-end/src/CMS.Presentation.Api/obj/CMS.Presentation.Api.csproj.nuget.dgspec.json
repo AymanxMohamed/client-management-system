@@ -4,6 +4,203 @@
     "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Presentation.Api\\CMS.Presentation.Api.csproj": {}
   },
   "projects": {
+    "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj",
+        "projectName": "CMS.Application",
+        "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj",
+        "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
+        "outputPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ayman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.126\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj",
+        "projectName": "CMS.Domain",
+        "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj",
+        "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
+        "outputPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ayman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.126\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj",
+        "projectName": "CMS.Infrastrucutre",
+        "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj",
+        "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
+        "outputPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ayman\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj"
+              },
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.117, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.126\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Presentation.Api\\CMS.Presentation.Api.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +224,17 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Application\\CMS.Application.csproj"
+              },
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj"
+              },
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
