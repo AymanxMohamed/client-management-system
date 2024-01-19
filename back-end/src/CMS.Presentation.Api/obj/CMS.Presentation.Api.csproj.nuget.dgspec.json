@@ -122,14 +122,14 @@
         }
       }
     },
-    "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj": {
+    "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastructure\\CMS.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj",
-        "projectName": "CMS.Infrastrucutre",
-        "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj",
+        "projectUniqueName": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastructure\\CMS.Infrastructure.csproj",
+        "projectName": "CMS.Infrastructure",
+        "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastructure\\CMS.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ayman\\.nuget\\packages\\",
-        "outputPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\obj\\",
+        "outputPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ayman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -231,8 +231,8 @@
               "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj": {
                 "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Domain\\CMS.Domain.csproj"
               },
-              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj": {
-                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastrucutre\\CMS.Infrastrucutre.csproj"
+              "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastructure\\CMS.Infrastructure.csproj": {
+                "projectPath": "D:\\09-Projects\\Tasks-for-companies\\Client-Management-System\\back-end\\src\\CMS.Infrastructure\\CMS.Infrastructure.csproj"
               }
             }
           }

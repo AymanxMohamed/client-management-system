@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Application", "CMS.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Domain", "CMS.Domain\CMS.Domain.csproj", "{323D8DE7-F591-4F06-B340-162927CC9E0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Infrastrucutre", "CMS.Infrastrucutre\CMS.Infrastrucutre.csproj", "{EE916991-5B53-442F-8F8C-6B85CB2DD261}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Infrastructure", "CMS.Infrastructure\CMS.Infrastructure.csproj", "{EE916991-5B53-442F-8F8C-6B85CB2DD261}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMS.Presentation.Api", "CMS.Presentation.Api\CMS.Presentation.Api.csproj", "{074B0A69-DCAE-4A29-AD78-A9B2915F45B7}"
 EndProject
