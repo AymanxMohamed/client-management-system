@@ -1,7 +1,4 @@
-﻿using CMS.Application.Clients.Dtos;
-using CMS.Application.Clients.Extensions;
-
-namespace CMS.Application.Clients.Commands;
+﻿namespace CMS.Application.Clients.Commands.CreateClient;
 
 public class CreateClientCommandHandler : ICommandHandler<CreateClientCommand, Client>
 {

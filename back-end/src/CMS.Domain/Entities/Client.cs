@@ -2,6 +2,8 @@
 
 public class Client : Entity
 {
+    public Client()
+    {}
     private Client(string name, string emailAddress, string phoneNumber, string homeAddress) : base(Guid.NewGuid())
     {
         Name = name;

@@ -15,19 +15,19 @@ public class ClientRepository : IClientRepository
         return (await _context.Clients.AddAsync(client, cancellationToken)).Entity;
     }
 
-    public async Task<List<Client>> GetClientsAsync(CancellationToken cancellationToken)
+    public List<Client> GetClients()
     {
-        return await _context.Clients.ToListAsync(cancellationToken);
+        return _context.Clients.ToList();
     }
 
-    public async Task<Client> GetClientByIdAsync(Guid? id, CancellationToken cancellationToken)
+    public Task<Client> GetClientByIdAsync(Guid? id, CancellationToken cancellationToken)
     {
         if (id == null)
-        {
             throw new ArgumentNullException(nameof(id), "Client Id cannot be null.");
-        }
+
+        var client = _context.Clients.FirstOrDefault(x => x.Id == id)!;
         
-        return (await _context.Clients.FirstOrDefaultAsync(x => x.Id == id, cancellationToken))!;
+        return Task.FromResult(client);
     }
 
     public async Task DeleteClientAsync(Guid? id, CancellationToken cancellationToken)

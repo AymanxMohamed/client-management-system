@@ -1,4 +1,4 @@
-﻿namespace CMS.Application.Clients.Commands;
+﻿namespace CMS.Application.Clients.Commands.CreateClient;
 
 public record CreateClientCommand(
     string Name, string EmailAddress, string PhoneNumber, string HomeAddress) : ICommand<Client>

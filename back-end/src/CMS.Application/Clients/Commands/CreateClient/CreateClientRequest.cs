@@ -1,6 +1,4 @@
-﻿using CMS.Application.Clients.Commands;
-
-namespace CMS.Application.Clients.Dtos;
+﻿namespace CMS.Application.Clients.Commands.CreateClient;
 
 public sealed record CreateClientRequest(string Name, string EmailAddress, string PhoneNumber, string HomeAddress)
 {
