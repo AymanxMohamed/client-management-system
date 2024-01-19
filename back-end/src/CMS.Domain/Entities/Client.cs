@@ -4,7 +4,7 @@ public class Client : Entity
 {
     public Client()
     {}
-    private Client(string name, string emailAddress, string phoneNumber, string homeAddress) : base(Guid.NewGuid())
+    private Client(Guid id, string name, string emailAddress, string phoneNumber, string homeAddress) : base(id)
     {
         Name = name;
         EmailAddress = emailAddress;
@@ -19,8 +19,9 @@ public class Client : Entity
 
 
     public static Client Create(string name, string emailAddress, string phoneNumber, string homeAddress)
-        => new(name, emailAddress, phoneNumber, homeAddress);
-
+        => new(Guid.NewGuid(), name, emailAddress, phoneNumber, homeAddress);
+    public static Client Create(Guid id, string name, string emailAddress, string phoneNumber, string homeAddress)
+        => new(id, name, emailAddress, phoneNumber, homeAddress);
     public void Update(string name, string emailAddress, string phoneNumber, string homeAddress)
     {
         Name = name;
