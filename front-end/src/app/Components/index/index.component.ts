@@ -7,6 +7,7 @@ import { EditComponent } from '../edit/edit.component';
 import { NgxSpinnerService } from "ngx-spinner";
 import { MatDialog } from '@angular/material/dialog';
 import { ConfirmationComponent } from '../confirmation/confirmation.component';
+import { SendEmailComponent } from "../send-email/send-email.component";
 
 
 
@@ -84,6 +85,15 @@ async editClient(client:Client){
     await this.router.navigate(["app-edit"], navigationExtras);
     this.modalService.open(EditComponent);
 }
+
+
+  async sendEmail(client:Client){
+    let navigationExtras: NavigationExtras = {
+      queryParams: client,
+    }
+    await this.router.navigate(["app-email"], navigationExtras);
+    this.modalService.open(SendEmailComponent);
+  }
 
 
 

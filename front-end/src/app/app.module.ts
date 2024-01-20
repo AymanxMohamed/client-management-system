@@ -15,6 +15,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ConfirmationComponent } from './Components/confirmation/confirmation.component';
+import { SendEmailComponent } from "./Components/send-email/send-email.component";
 
 
 
@@ -28,7 +29,7 @@ import { ConfirmationComponent } from './Components/confirmation/confirmation.co
     EditComponent,
     IndexComponent,
     ConfirmationComponent,
-
+    SendEmailComponent
 
   ],
   imports: [

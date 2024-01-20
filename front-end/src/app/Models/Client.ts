@@ -6,3 +6,9 @@ export class Client {
   homeAddress: string;
   checked?: boolean;
 }
+
+export class Email {
+  subject: string;
+  receiverEmail: string;
+  body: string;
+}

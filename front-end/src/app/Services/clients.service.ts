@@ -11,10 +11,10 @@ import { Result } from "../Models/Result";
 })
 export class ClientsService {
 
+  serviceUrl = `${environment.ApiUrl}/Clients`;
 
   constructor(private httpClient:HttpClient) {
   }
-
 
   private _refreshNeeded=new Subject<void>();
 
@@ -24,15 +24,15 @@ export class ClientsService {
 
 
   getClients():Observable<TResult<Client[]>> {
-    return this.httpClient.get<TResult<Client[]>>(`${environment.ApiUrl}/GetClients`);
+    return this.httpClient.get<TResult<Client[]>>(`${this.serviceUrl}/GetClients`);
   }
 
   getClientById(clientId:string):Observable<TResult<Client>> {
-    return this.httpClient.get<TResult<Client>>(`${environment.ApiUrl}/GetClientById/${clientId}`);
+    return this.httpClient.get<TResult<Client>>(`${this.serviceUrl}/GetClientById/${clientId}`);
   }
 
   createClient(client: Client):Observable<Client>{
-    return this.httpClient.post<Client>(`${environment.ApiUrl}/CreateClient`,client).pipe(
+    return this.httpClient.post<Client>(`${this.serviceUrl}/CreateClient`,client).pipe(
       tap(()=> {
         this.refreshNeeded.next();
       })
@@ -40,7 +40,7 @@ export class ClientsService {
   }
 
   deleteClient(clientId:string):Observable<Result> {
-   return this.httpClient.delete<Result>(`${environment.ApiUrl}/DeleteClient/${clientId}`).pipe(
+   return this.httpClient.delete<Result>(`${this.serviceUrl}/DeleteClient/${clientId}`).pipe(
     tap(()=>{
       this.refreshNeeded.next();
     })
@@ -48,7 +48,7 @@ export class ClientsService {
   }
 
   updateClient(client:Client):Observable<TResult<Client>>{
-    return  this.httpClient.put<TResult<Client>>(`${environment.ApiUrl}/UpdateClient`, client).pipe(
+    return  this.httpClient.put<TResult<Client>>(`${this.serviceUrl}/UpdateClient`, client).pipe(
       tap(()=>{
         this.refreshNeeded.next();
       })
