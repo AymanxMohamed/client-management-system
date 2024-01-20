@@ -1,0 +1,41 @@
+<ngx-spinner bdColor = "rgb(0,0,0)" size = "medium" color = "#fff" type = "line-spin-clockwise-fade" [fullScreen] = "true"><p style="color: white" > Loading... </p></ngx-spinner>
+<div *ngIf="displayTable" class=" container bg-white">
+<table  datatable [dtOptions]="dtOptions"  class="table table-striped">
+  <thead >
+    <tr >
+      <th scope="col"><input type="checkbox" id="checkAll" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)"/></th>
+      <th scope="col">Name</th>
+      <th scope="col">Email Address</th>
+      <th scope="col">Home Address</th>
+      <th scope="col">Phone Number</th>
+      <th> Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let client of clientList;let i=index">
+      <td><input type="checkbox" value="{{client.id}}" [(ngModel)]="clientList[i].checked" /></td>
+      <td>{{client.name}}</td>
+      <td>{{client.emailAddress}}</td>
+      <td>{{client.homeAddress}}</td>
+      <td>{{client.phoneNumber}}</td>
+      <td>
+
+        <button class="btn" (click)="editClient(client)">
+          <mat-icon class="text-warning">edit</mat-icon>
+        </button>
+
+        <button class="btn" (click)="deleteClient(client.id)">
+          <mat-icon  class="text-danger" >delete</mat-icon>
+        </button>
+
+      </td>
+
+
+      </tr>
+
+
+  </tbody>
+
+</table>
+</div>
+<h1 class="text-danger text-center" *ngIf="!displayTable">No Clients Found</h1>

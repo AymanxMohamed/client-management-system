@@ -1,0 +1,91 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Add Client</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+
+<div class="modal-body">
+  <form class="form" [formGroup]="clientForm" id="myform">
+    <div class="form-group my-2">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        formControlName="name"
+        class="form-control my-2"
+        id="name"
+      />
+      <span
+        class="text-danger"
+        *ngIf="(clientFormControl['name'].touched || submitted) && clientFormControl['name'].errors?.['required']"
+      >
+        Name is required
+      </span>
+    </div>
+
+    <div class="form-group my-2">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        formControlName="emailAddress"
+        class="form-control my-2"
+        id="email"
+      />
+      <span
+        class="text-danger"
+        *ngIf="(clientFormControl['emailAddress'].touched || submitted) && clientFormControl['emailAddress'].errors?.['required']"
+      >
+        Email is required
+      </span>
+      <!-- valid email -->
+      <span
+        class="text-danger"
+        *ngIf="(clientFormControl['emailAddress'].touched || submitted) && clientFormControl['emailAddress'].errors?.['email']"
+      >
+        Enter Valid Email
+      </span>
+    </div>
+
+    <div class="form-group my-2">
+      <label for="exampleFormControlTextarea1">Address</label>
+      <textarea
+        class="form-control my-2"
+        formControlName="homeAddress"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+      <span class="text-danger"
+      *ngIf="(clientFormControl['homeAddress'].touched || submitted) && clientFormControl['homeAddress'].errors?.['required']">
+       Home Address is required
+      </span>
+    </div>
+
+    <div class="form-group my-2">
+      <label for="phone">Phone</label>
+      <input
+        type="tel"
+        class="form-control my-2"
+        formControlName="phoneNumber"
+        id="phone"
+      />
+      <span class="text-danger"
+      *ngIf="(clientFormControl['phoneNumber'].touched || submitted) && clientFormControl['phoneNumber'].errors?.['required']">
+       Phone is required
+      </span>
+
+      <span class="text-danger"
+      *ngIf="(clientFormControl['phoneNumber'].touched || submitted) && clientFormControl['phoneNumber'].errors?.['pattern']">
+       Phone must be eleven and start with 010 or 011 or 012
+      </span>
+
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer bg-light">
+  <button type="button" class="btn" (click)="modalRef.close()">Cancel</button>
+  <button type="submit" class="btn btn-success" (click)="createClient()">Add</button>
+</div>

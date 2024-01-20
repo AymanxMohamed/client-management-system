@@ -3,6 +3,7 @@ using CMS.Application.Clients.Commands.CreateClient;
 using CMS.Application.Clients.Commands.DeleteClient;
 using CMS.Application.Clients.Commands.UpdateClient;
 using CMS.Application.Clients.Dtos;
+using CMS.Application.Clients.Extensions;
 using CMS.Application.Clients.Queries.GetClientById;
 using CMS.Application.Clients.Queries.GetClients;
 using CMS.Domain.Errors;
@@ -13,11 +14,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CMS.Presentation.Api.Controllers;
 
-public class ClientController : ApiController
+public class ClientsController : ApiController
 {
-    private readonly ILogger<ClientController> _logger;
+    private readonly ILogger<ClientsController> _logger;
     
-    public ClientController(ISender sender, ILogger<ClientController> logger) : base(sender)
+    public ClientsController(ISender sender, ILogger<ClientsController> logger) : base(sender)
     {
         _logger = logger;
     }
@@ -25,7 +26,7 @@ public class ClientController : ApiController
     [HttpPost(nameof(CreateClient), Name = nameof(CreateClient))]
     [ProducesResponseType(typeof(Result<ClientDto>), (int)HttpStatusCode.Created)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    public async Task<ActionResult<Result<ClientDto>>> CreateClient(CreateClientRequest createClientRequest, 
+    public async Task<ActionResult<Result<ClientDto>>> CreateClient([FromBody]CreateClientRequest createClientRequest, 
         CancellationToken cancellationToken)
     {
         var command = createClientRequest.ToCommand();
@@ -53,10 +54,10 @@ public class ClientController : ApiController
         return Ok(result);
     }
     
-    [HttpDelete("UpdateClient", Name = nameof(UpdateClient))]
-    [ProducesResponseType(typeof(Result<Result>), (int)HttpStatusCode.NoContent)]
+    [HttpPut("UpdateClient", Name = nameof(UpdateClient))]
+    [ProducesResponseType(typeof(Result<Result>), (int)HttpStatusCode.OK)]
     [ProducesResponseType((int)HttpStatusCode.BadRequest)]
-    public async Task<ActionResult> UpdateClient(UpdateClientRequest request, CancellationToken cancellationToken)
+    public async Task<ActionResult<Result<ClientDto>>> UpdateClient([FromBody]UpdateClientRequest request, CancellationToken cancellationToken)
     {
         var command = request.ToCommand();
         
@@ -65,7 +66,7 @@ public class ClientController : ApiController
         if (result.IsFailure)
             return BadRequest(result.Error);
 
-        return NoContent();
+        return Ok(Result.Success(result.Value.ToClientDto()));
     }
     
 
@@ -100,7 +101,7 @@ public class ClientController : ApiController
         if (result.IsFailure)
             return BadRequest(result.Error);
 
-        return Ok(result.Value);
+        return Ok(result);
     }
     
 }

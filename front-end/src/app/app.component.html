@@ -1,0 +1,17 @@
+<div class="container">
+  <h2 class="text-danger" *ngIf="isPressed && checkedIds.length==0 ">Please Select at least one</h2>
+<div class="table-header d-flex justify-content-between align-items-center p-3 mt-5">
+  <h3 class="text-white">Manage <b>Clients</b></h3>
+  <div class="d-flex">
+    <button class="btn btn-danger mx-2 p-2 d-flex align-items-center" (click)="DeleteMany()">
+      <mat-icon>remove_circle_fill</mat-icon>
+      <span class="mx-2">Delete</span>
+    </button>
+    <button class="btn btn-success d-flex p-2 align-items-center" (click)="openModal()">
+      <mat-icon>add_circle_fill</mat-icon>
+       <span class="mx-2">Add New Client</span>
+    </button>
+  </div>
+</div>
+<app-index></app-index>
+</div>
