@@ -16,7 +16,7 @@ export class AppComponent {
   isPressed:boolean = false
   checkedIds:any
   modalRef: MdbModalRef<AddComponent>;
-  title: string = 'task';
+  title: string = 'Client Management System';
 
   constructor(private modalService: MdbModalService, private clientsService: ClientsService, private dialog: MatDialog) {
 
